@@ -1,0 +1,22 @@
+{
+  "name": "chai-interface",
+  "version": "1.0.0",
+  "description": "chai assertions about an object's interface",
+  "main": "index.js",
+  "repository": "git@github.com:AgileDiagnosis/chai-interface.git",
+  "keywords": [
+    "chai",
+    "test",
+    "interface",
+    "plugin"
+  ],
+  "author": "Agile Diagnosis <hello@agilediagnosis.com>",
+  "contributors": [
+    {
+      "name": "jden",
+      "email": "jason@denizac.org"
+    }
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
