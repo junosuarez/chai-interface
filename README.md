@@ -6,7 +6,7 @@ chai assertions about an object's interface
     $ npm install chai-interface
 
 ## usage
-
+```js
     var chai = require('chai')
     chai.should()
     chai.use(require('chai-interface'))
@@ -26,9 +26,9 @@ chai assertions about an object's interface
       quack: Function,
       ducks: Array
     })
-
+```
 Also, more complex, nested objects!
-
+```js
     var user = {
       name: {
         first: 'Betty',
@@ -52,9 +52,9 @@ Also, more complex, nested objects!
         school: String
       }
     })
-
+```
 Also, use empty object or array literals:
-
+```js
     var foo = {
       bars: ['a', 'b', 'c'],
       megabars: {a: 1, b: 2}
@@ -64,7 +64,7 @@ Also, use empty object or array literals:
       bars: [],
       megabars: {}
     })
-
+```
 ## known limitations
 
 Currently, there is no support for asserting RegExps, Dates, instanceofs, or
@@ -81,4 +81,6 @@ Please submit pull requests and issues through github.
 
 ## license
 
-MIT - see LICENSE.md
+MIT
+(c) 2013 Agile Diagnosis, Inc.
+see LICENSE.md
