@@ -26,7 +26,7 @@ function chaiInterface(chai, utils) {
         assert(actualType === type,
               'expected ' + prop + ' to be typeof ' + type +', but was ' + actualType,
               'stop using this in the negative, it doesn\'t make sense')
-      } else if (Array.isArray(type)) {
+      } else if (Array.isArray(type) || type === Array) {
         assert(Array.isArray(obj[prop]),
               'expected ' + prop + ' to be an array, but was ' + actualType,
               'negative'
