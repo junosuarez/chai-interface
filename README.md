@@ -27,6 +27,7 @@ chai assertions about an object's interface
       ducks: Array
     })
 ```
+
 Also, more complex, nested objects!
 ```js
     var user = {
@@ -53,25 +54,25 @@ Also, more complex, nested objects!
       }
     })
 ```
-Also, use empty object or array literals:
-```js
-    var foo = {
-      bars: ['a', 'b', 'c'],
-      megabars: {a: 1, b: 2}
+
+## example error message
+
+    Interface not as expected:
+    {
+      "bars": {
+        "actual": "Array<String>",
+        "expected": "Array<Number>",
+        "actualValue": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
     }
 
-    foo.should.have.interface({
-      bars: [],
-      megabars: {}
-    })
-```
-## known limitations
+## by the power of [tracery](https://github.com/AgileDiagnosis/tracery)
 
-Currently, there is no support for asserting RegExps, Dates, instanceofs, or
-other range limitations declaritively. I've found `chai`'s built-in assertion
-methods to be best for these more complex use cases.
-
-If this functionality would be useful to you, please submit a pull request.
+`chai-interface` does interface checking using `tracery`
 
 ## contributors
 

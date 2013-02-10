@@ -44,17 +44,34 @@ user.should.have.interface({
   }
 })
 
-//Also, use empty object or array literals:
+//An example of failure output
 
 var foo = {
   bars: ['a', 'b', 'c'],
   megabars: {a: 1, b: 2}
 }
 
-foo.should.have.interface({
-  bars: [],
-  megabars: {}
-})
+chai.expect(function () {
 
+  foo.should.have.interface({
+    bars: [Number],
+    megabars: Object
+  })
+
+}).to.throw()
+// throws:
+
+// Interface not as expected:
+// {
+//   "bars": {
+//     "actual": "Array<String>",
+//     "expected": "Array<Number>",
+//     "actualValue": [
+//       "a",
+//       "b",
+//       "c"
+//     ]
+//   }
+// }
 
 console.log('okay!')
