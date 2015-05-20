@@ -7,7 +7,8 @@ var foo = {
   baz: 'green',
   qux: 37,
   quack: function () {},
-  ducks: [1, 2, 3]
+  ducks: [1, 2, 3],
+  candy: null
 }
 
 foo.should.have.interface({
@@ -15,7 +16,8 @@ foo.should.have.interface({
   baz: String,
   qux: Number,
   quack: Function,
-  ducks: Array
+  ducks: Array,
+  candy: null
 })
 
 //Also, more complex, nested objects!
