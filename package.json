@@ -26,6 +26,6 @@
     "test": "node test/example.js"
   },
   "dependencies": {
-    "tracery": "^1.0.2"
+    "tracery": "^1.0.3"
   }
 }
