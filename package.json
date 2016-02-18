@@ -6,6 +6,9 @@
   "repository": "git@github.com:AgileDiagnosis/chai-interface.git",
   "keywords": [
     "chai",
+    "chai-plugin",
+    "browser",
+    "objects",
     "test",
     "interface",
     "plugin"
